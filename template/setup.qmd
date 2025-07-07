@@ -1,7 +1,19 @@
 .docname {report template}
-.docauthor {Name Surname}
 .doctype {paged}
 .doclang {Italian}
+.docauthors
+    - Name1 Surname
+        - email: name.surname@studio.unibo.it
+        - matricula: 123456789
+    - Name2 Surname
+        - email: name.surname@studio.unibo.it
+        - matricula: 123456789
+    - Name3 Surname
+        - email: name.surname@studio.unibo.it
+        - matricula: 123456789
+    - Name4 Surname
+        - email: name.surname@studio.unibo.it
+        - matricula: 123456789
 
 .var {project} {Motorcycle Repair Shop}
 .var {academic-year} {2024-2025}

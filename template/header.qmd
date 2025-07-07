@@ -2,7 +2,19 @@
 	#! Elaborato di Basi di Dati
     ##! .project
 
-.align {end}
-    asd
+.var {height} {65}
+
+.foreach {.docauthors}
+    name info:
+    .height {.height::subtract {5}}
+
+.whitespace height:{.height%}
+
+.foreach {.docauthors}
+    name info:
+    .row gap:{1cm}
+        **.name**
+
+        .get {email} from:{.info}
 
 <<<
