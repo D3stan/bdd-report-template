@@ -1,0 +1,85 @@
+---
+title: Progetto di una base di dati per NOME PROGETTO
+author: Nome Cognome - Matricola, [Nome Cognome - Matricola], [Nome Cognome - Matricola]
+date: A.A 2024/2025
+---
+
+.numbering
+  - sections: yes
+  - figures: yes
+
+.theme {paperwhite} layout:{latex}
+.doclang {it-IT}
+.doctype {paged}
+.pageformat {a4}
+.tableofcontents
+
+# Analisi dei requisiti
+
+## Intervista
+
+[Inserire qui il testo dell'intervista con il cliente.]
+
+## Rilevamento delle ambiguità e correzioni proposte
+
+[Inserire qui le ambiguità rilevate nel testo dell'intervista e le correzioni proposte.]
+
+## Definizione delle specifiche in linguaggio naturale ed estrazione dei concetti principali
+
+[Inserire qui la definizione delle specifiche in linguaggio naturale e l'estrazione dei concetti principali.]
+
+# Progettazione Concettuale
+
+## Schema scheletro
+
+[Inserire qui lo schema scheletro del database.]
+
+## Raffinamenti proposti
+
+[Inserire qui i raffinamenti proposti allo schema scheletro.]
+
+## Schema concettuale finale
+
+[Inserire qui lo schema concettuale finale del database.]
+
+# Progettazione logica
+
+## Stima del volume dei dati
+
+[Inserire qui la stima del volume dei dati.]
+
+## Descrizione delle operazioni principali e stima della loro frequenza
+
+[Inserire qui la descrizione delle operazioni principali e la stima della loro frequenza.]
+
+## Schemi di navigazione e tabelle degli accessi
+
+[Inserire qui gli schemi di navigazione e le tabelle degli accessi.]
+
+## Raffinamento dello schema
+
+### Eliminazione di identificatori esterni, attributi composti e gerarchie, scelta delle chiavi
+
+[Inserire qui il testo relativo al raffinamento dello schema.]
+
+## Analisi delle ridondanze
+
+[Inserire qui l'analisi delle ridondanze.]
+
+## Traduzione di entità e associazioni in relazioni
+
+[Inserire qui la traduzione di entità e associazioni in relazioni.]
+
+## Schema relazionale finale
+
+[Inserire qui lo schema relazionale finale.]
+
+## Traduzione delle operazioni in query SQL
+
+[Inserire qui la traduzione delle operazioni in query SQL.]
+
+# Progettazione dell'applicazione
+
+## Descrizione dell'architettura dell'applicazione realizzata
+
+[Inserire qui la descrizione dell'architettura dell'applicazione realizzata, con screenshot dell'interfaccia utente.]
