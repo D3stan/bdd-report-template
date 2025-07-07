@@ -1,0 +1,8 @@
+.center
+	#! Elaborato di Basi di Dati
+    ##! .project
+
+.align {end}
+    asd
+
+<<<

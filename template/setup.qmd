@@ -1,0 +1,15 @@
+.docname {report template}
+.docauthor {Name Surname}
+.doctype {paged}
+.doclang {Italian}
+
+.var {project} {Motorcycle Repair Shop}
+.var {academic-year} {2024-2025}
+.var {matricula} {123456789}
+.var {email} {name.surname@studio.unibo.it}
+
+.theme {paperwhite} layout:{latex}
+.pageformat {a4}
+
+.pagemargin {bottomright}
+	.currentpage

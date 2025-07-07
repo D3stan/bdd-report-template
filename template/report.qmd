@@ -1,17 +1,7 @@
----
-title: Progetto di una base di dati per NOME PROGETTO
-author: Nome Cognome - Matricola, [Nome Cognome - Matricola], [Nome Cognome - Matricola]
-date: A.A 2024/2025
----
+.include {setup.qmd}
 
-.numbering
-  - sections: yes
-  - figures: yes
+.include {header.qmd}
 
-.theme {paperwhite} layout:{latex}
-.doclang {it-IT}
-.doctype {paged}
-.pageformat {a4}
 .tableofcontents
 
 # Analisi dei requisiti
