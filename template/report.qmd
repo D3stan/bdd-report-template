@@ -36,7 +36,7 @@
 
 ## Schema scheletro
 
-![ER](quarkdown-icon.svg "Inserire qui lo schema scheletro del database")
+![ER](imgs/scheletro.png "Inserire qui lo schema scheletro del database")
 
 ## Raffinamenti proposti
 
@@ -44,7 +44,7 @@
 
 ## Schema concettuale finale
 
-![ER](quarkdown-icon.svg "Inserire qui lo schema concettuale finale")
+![ER](imgs/finale.png "Inserire qui lo schema concettuale finale")
 
 
 
@@ -64,17 +64,84 @@
 
 ## Schemi di navigazione e tabelle degli accessi
 
-[Inserire qui gli schemi di navigazione e le tabelle degli accessi.]
+#####! OP 1 - Operazione 1
+[Inserire qui descrizione operazione 1]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 1]
+
+#####! OP 2 - Operazione 2
+[Inserire qui descrizione operazione 2]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 2]
+
+![ER](imgs/navigazione2.png "Inserire qui lo schema di navigazione dell'operazione 2")
+
 
 ## Raffinamento dello schema
 
-### Eliminazione di identificatori esterni, attributi composti e gerarchie, scelta delle chiavi
+#### Eliminazione degli attributi composti
+.loremipsum
 
-[Inserire qui il testo relativo al raffinamento dello schema.]
+#### Eliminazione di identificatori esterni
+.loremipsum
+
+#### Eliminazione gerarchie
+.loremipsum
+
+#### Scelta delle chiavi 
+.loremipsum
 
 ## Analisi delle ridondanze
 
-[Inserire qui l'analisi delle ridondanze.]
+[Inserire qui l'elenco delle ridondanze presenti.]
+
+#####! OP 1 - Operazione 1
+[Inserire qui descrizione della ridondanza nell'operazione 1 (contando le ridondanze)]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 1]
+
+[Inserire qui descrizione della ridondanza nell'operazione 1 (senza le ridondanze)]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 1]
+
+#####! OP 2 - Operazione 2
+[Inserire qui descrizione operazione 2 (contando le ridondanze)]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 2]
+
+[Inserire qui descrizione operazione 2 (senza le ridondanze)]
+| Concetto | Tipo | Accessi | Operazione 
+|----------|------|---------|------------
+| Concetto1 | E | 1 | L
+| Concetto2 | R | 2 | S
+
+.center
+    [Totale costo operazione 2]
 
 ## Traduzione di entità e associazioni in relazioni
 
@@ -82,16 +149,36 @@
 
 ## Schema relazionale finale
 
-[Inserire qui lo schema relazionale finale.]
+![RL](imgs/relazionale.png "Inserire qui lo schema relazionale")
 
 ## Traduzione delle operazioni in query SQL
 
-[Inserire qui la traduzione delle operazioni in query SQL.]
+##### OP 1 - Operazione 1
+[Inserire qui commenti aggiuntivi per l'operazione 1 se necessari.]
 
+.code {sql}
+    SELECT code
+    FROM goes
+    WHERE here  
+
+
+##### OP 2 - Operazione 2
+[Inserire qui commenti aggiuntivi per l'operazione 2 se necessari.]
+
+.code {sql}
+    SELECT code
+    FROM goes
+    WHERE here
 
 
 # Progettazione dell'applicazione
 
 ## Descrizione dell'architettura dell'applicazione realizzata
 
-[Inserire qui la descrizione dell'architettura dell'applicazione realizzata, con screenshot dell'interfaccia utente.]
+[Inserire qui la descrizione dell'architettura dell'applicazione realizzata]
+
+## Guida utente
+
+[Inserire qui una breve descrizione o demo dell'utilizzo dell'applicazione.]
+
+![screenshot](imgs/screenshot.png "Inserire qui screenshot dell'applicazione")
