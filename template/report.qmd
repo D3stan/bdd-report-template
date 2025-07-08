@@ -6,17 +6,29 @@
 
 # Analisi dei requisiti
 
+[Inserire qui la descrizione del progetto.]
+
 ## Intervista
 
 [Inserire qui il testo dell'intervista con il cliente.]
+
 
 ## Rilevamento delle ambiguità e correzioni proposte
 
 [Inserire qui le ambiguità rilevate nel testo dell'intervista e le correzioni proposte.]
 
+.tablesort {1}
+    .csv {tables/concepts.csv} caption:{concetti.}
+
+
 ## Definizione delle specifiche in linguaggio naturale ed estrazione dei concetti principali
 
-[Inserire qui la definizione delle specifiche in linguaggio naturale e l'estrazione dei concetti principali.]
+[Inserire qui il riassunto dell'intervista con le correzioni]
+
+[Elenco con le operazioni definite]
+- op1
+- op2
+
 
 # Progettazione Concettuale
 
@@ -31,6 +43,8 @@
 ## Schema concettuale finale
 
 [Inserire qui lo schema concettuale finale del database.]
+
+
 
 # Progettazione logica
 
@@ -67,6 +81,8 @@
 ## Traduzione delle operazioni in query SQL
 
 [Inserire qui la traduzione delle operazioni in query SQL.]
+
+
 
 # Progettazione dell'applicazione
 
