@@ -17,5 +17,6 @@
         **.name**
 
         .get {email} from:{.info}
+        .get {matricula} from:{.info}
 
 <<<
