@@ -32,9 +32,11 @@
 
 # Progettazione Concettuale
 
+[Inserire qui descrizione della prima iterazione di schema ER]  
+
 ## Schema scheletro
 
-[Inserire qui lo schema scheletro del database.]
+![ER](quarkdown-icon.svg "Inserire qui lo schema scheletro del database")
 
 ## Raffinamenti proposti
 
@@ -42,7 +44,7 @@
 
 ## Schema concettuale finale
 
-[Inserire qui lo schema concettuale finale del database.]
+![ER](quarkdown-icon.svg "Inserire qui lo schema concettuale finale")
 
 
 
@@ -50,9 +52,13 @@
 
 ## Stima del volume dei dati
 
-[Inserire qui la stima del volume dei dati.]
+.tablesort {1}
+    .csv {tables/volumes.csv} caption:{volumi di dati.}
 
 ## Descrizione delle operazioni principali e stima della loro frequenza
+
+.tablesort {1}
+    .csv {tables/operations.csv} caption:{frequenza operazioni.}
 
 [Inserire qui la descrizione delle operazioni principali e la stima della loro frequenza.]
 
