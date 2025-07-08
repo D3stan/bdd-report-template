@@ -1,6 +1,7 @@
 .center
 	#! Elaborato di Basi di Dati
     ##! .project
+    ###! A.A. .academicyear
 
 .var {height} {65}
 
@@ -12,7 +13,7 @@
 
 .foreach {.docauthors}
     name info:
-    .row gap:{1cm}
+    .row gap:{1cm} alignment:{end}
         **.name**
 
         .get {email} from:{.info}
