@@ -57,12 +57,27 @@ jobs:
 
       - name: Prepare deployment files
         run: |
-          # The output should be in the output directory after compilation
+          # The output should be in the output/report-template directory after compilation
           mkdir -p deploy
-          if [ -d "output" ]; then
+          if [ -d "output/report-template" ]; then
+            cp -r output/report-template/* deploy/
+          elif [ -d "output" ]; then
+            # Fallback: if there's no report-template subdirectory, copy everything
             cp -r output/* deploy/
           else
             echo "Error: Could not find compiled output directory"
+            echo "Contents of current directory:"
+            ls -la
+            echo "Contents of output directory (if exists):"
+            ls -la output/ || echo "Output directory does not exist"
+            exit 1
+          fi
+          
+          # Verify index.html exists
+          if [ ! -f "deploy/index.html" ]; then
+            echo "Error: index.html not found in deploy directory"
+            echo "Contents of deploy directory:"
+            ls -la deploy/
             exit 1
           fi
 
