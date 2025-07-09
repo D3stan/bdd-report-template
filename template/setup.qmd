@@ -5,13 +5,13 @@
     - Name Surname
         - email: name.surname@studio.unibo.it
         - matricula: 123456789
-    - Name Surname
+    - Name2 Surname
         - email: name.surname@studio.unibo.it
         - matricula: 123456789
-    - Name Surname
+    - Name3 Surname
         - email: name.surname@studio.unibo.it
         - matricula: 123456789
-    - Name Surname
+    - Name4 Surname
         - email: name.surname@studio.unibo.it
         - matricula: 123456789
 
