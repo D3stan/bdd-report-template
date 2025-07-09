@@ -1,0 +1,76 @@
+name: Deploy Report to GitHub Pages
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Download latest Quarkdown release
+        run: |
+          # Get latest release download URL
+          LATEST_RELEASE=$(curl -s https://api.github.com/repos/iamgio/quarkdown/releases/latest | grep "browser_download_url.*quarkdown.zip" | cut -d '"' -f 4)
+          echo "Downloading Quarkdown from: $LATEST_RELEASE"
+          
+          # Download and extract
+          wget -O quarkdown.zip "$LATEST_RELEASE"
+          unzip quarkdown.zip
+          
+          # Make quarkdown executable and add to PATH
+          chmod +x quarkdown/bin/quarkdown
+          echo "$GITHUB_WORKSPACE/quarkdown/bin" >> $GITHUB_PATH
+
+      - name: Verify Quarkdown installation
+        run: |
+          quarkdown --version
+
+      - name: Compile report
+        run: |
+          cd template
+          quarkdown c report.qmd -o ../output --clean
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Prepare deployment files
+        run: |
+          # The output should be in the output directory after compilation
+          mkdir -p deploy
+          if [ -d "output" ]; then
+            cp -r output/* deploy/
+          else
+            echo "Error: Could not find compiled output directory"
+            exit 1
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: deploy
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
