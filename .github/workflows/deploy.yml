@@ -45,7 +45,7 @@ jobs:
 
       - name: Verify Quarkdown installation
         run: |
-          quarkdown --version
+          quarkdown --help | head -5
 
       - name: Compile report
         run: |
