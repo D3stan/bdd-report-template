@@ -30,11 +30,11 @@
 - op2
 
 
-# Progettazione Concettuale
-
-[Inserire qui descrizione della prima iterazione di schema ER]  
+# Progettazione Concettuale 
 
 ## Schema scheletro
+
+[Inserire qui descrizione della prima iterazione di schema ER] 
 
 ![ER](imgs/scheletro.png "Inserire qui lo schema scheletro del database")
 
